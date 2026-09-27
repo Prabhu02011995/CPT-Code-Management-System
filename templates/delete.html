@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Delete CPT Code</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <h1>Delete CPT Code</h1>
+
+    <form method="POST">
+
+        <p>
+            <label>Enter CPT Code to Delete:</label><br>
+
+            <input type="text"
+                   name="cpt_code"
+                   required>
+        </p>
+
+        <button type="submit"
+                onclick="return confirm('Are you sure you want to delete this CPT code?');">
+            Delete CPT Code
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/">
+        <button type="button">Back to Home</button>
+    </a>
+
+</body>
+
+</html>

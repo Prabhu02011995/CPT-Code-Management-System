@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Update CPT Code</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <h1>Update CPT Code</h1>
+
+    <form method="POST">
+
+        <p>
+            <label>CPT Code:</label><br>
+            <input type="text" name="cpt_code" required>
+        </p>
+
+        <p>
+            <label>Procedure Name:</label><br>
+            <input type="text" name="procedure_name" required>
+        </p>
+
+        <p>
+            <label>Description:</label><br>
+            <input type="text" name="description">
+        </p>
+
+        <p>
+            <label>Category:</label><br>
+            <input type="text" name="category" required>
+        </p>
+
+        <p>
+            <label>Fee:</label><br>
+            <input type="number" step="0.01" name="fee" required>
+        </p>
+
+        <p>
+            <label>Status:</label><br>
+
+            <select name="status">
+
+                <option value="Completed">Completed</option>
+
+                <option value="Pending">Pending</option>
+
+            </select>
+
+        </p>
+
+        <button type="submit">Update CPT Code</button>
+
+    </form>
+
+    <br>
+
+    <a href="/">
+        <button type="button">Back to Home</button>
+    </a>
+
+</body>
+
+</html>
